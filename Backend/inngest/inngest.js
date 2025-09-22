@@ -1,5 +1,5 @@
 const { Inngest } = require("inngest");
-const User = require("../models/user");
+const User = require("../models/User.js");
 
 // Create a client to send and receive events
 const inngest = new Inngest({ id: "movie-ticket-booking" });
