@@ -23,3 +23,5 @@ app.use('/api/inngest', serve({ client: inngest, functions }))
 app.listen(5000, ( res ) => {
     console.log("Backend is Running....")
 })
+
+module.exports = app;
