@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Gabarito:wght@400..900&family=Outfit:wght@100..900&family=Protest+Riot&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Special+Elite&family=Young+Serif&display=swap');
+
+@theme{
+    --color-primary: #F84565
+    --color-primary-dull: "#D63854"
+}
+
+* {
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    color: white;
+    background-color: #09090B;
+}
+
+.no-scrollbar{
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+::-webkit-calender-picker-indicator {
+    filter: invert(1);
+}
