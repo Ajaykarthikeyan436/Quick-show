@@ -5,6 +5,7 @@ const connectDB = require("./config/mongodb.js")
 const { serve } = require('inngest/express')
 const { inngest, functions } = require('./inngest/inngest.js')
 const { clerkMiddleware } = require('@clerk/express')
+const showRouter = require('./routes/showRoute.js')
 
 const app = express()
 
@@ -17,8 +18,9 @@ app.use(clerkMiddleware())
 connectDB()
 
 //API Routes
-app.get("/", (req, res) => res.send("Backend is Running.."))
+app.get('/', (req, res) => res.send("Backend is Running.."))
 app.use('/api/inngest', serve({ client: inngest, functions }))
+app.use('/api/show', showRouter)
 
 app.listen(5000, ( res ) => {
     console.log("Backend is Running....")
