@@ -82,8 +82,8 @@ export const AppProvider = ({ children }) => {
     }, [user])
 
     const value = {
-        axios, user, getToken, navigate, 
-        isAdmin, shows, favoriteMovies, 
+        axios, user, getToken, navigate,
+        isAdmin, shows, favoriteMovies,
         fetchFavoriteMovies, fetchIsAdmin,
     }
 

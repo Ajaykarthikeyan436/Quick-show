@@ -1,5 +1,5 @@
 const express = require('express')
-const protectAdmin = require('../midddleware/auth')
+const protectAdmin = require('../midddleware/auth.js')
 const { isAdmin, getDashboardData, getAllShows, getAllBookings } = require('../controllers/adminController.js')
 
 const adminRouter = express.Router()
